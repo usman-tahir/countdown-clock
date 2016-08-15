@@ -14,7 +14,7 @@ h1 {
   margin: 40px 0px 20px;
 }
 
-#clock-div {
+#clock {
   color: #fff;
   display: inline-block;
   font-weight: 100;
@@ -22,18 +22,30 @@ h1 {
   font-size: 30px;
 }
 
-#clock-div > div {
+#clock > div {
   padding: 10px;
   border-radius: 3px;
   background: #00bf96;
   display: inline-block;
 }
 
-#clock-div div > span {
+#clock div > span {
   padding: 15px;
   border-radius: 3px;
   background: #00816a;
   display: inline-block;
+}
+
+#date-selection {
+  color: #396;
+  padding-top: 30px;
+  font-size: 24px;
+}
+
+
+#submit-date {
+  width: 90px;
+  height: 60px;
 }
 
 .small-text {

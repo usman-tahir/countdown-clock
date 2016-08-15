@@ -1,4 +1,12 @@
 
+// Add an eventListener to get the future Date
+var button = document.getElementById("submit-date");
+button.addEventListener("click", function () {
+  var selectedDate = document.getElementById("selected-date").value,
+    deadline = new Date(Date.parse(selectedDate.toString() + " GMT-0400"));
+    initializeClock("clock", deadline);
+});
+
 function getRemainingTime(endTime) {
 
   "use strict";
@@ -52,8 +60,3 @@ function initializeClock(id, endTime) {
     var timeInterval = setInterval(updateClock, 1000);
 
 }
-
-// Set a deadline
-// TODO: Make a UI component to set deadlines
-var deadline = new Date(Date.parse("August 17 2016"));
-initializeClock("clock-div", deadline);
